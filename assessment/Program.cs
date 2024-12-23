@@ -4,9 +4,11 @@ using System;
 Console.WriteLine("Hello, World!");
 
 //1 simple adding
-int[] number = { 1, 2, 3, 4, 5, };
+
+
+int number =Convert.ToInt32( Console.ReadLine());
 int sum = 0;
-for (int z = 0; z <= number.Length; z++)
+for (int z = 1; z<=number; z++)
 {
     sum += z;
 
@@ -16,20 +18,19 @@ Console.WriteLine("the sum is: " + sum);
 
 
 //3 Factorial
-int FirstFactorial = 1;
-int num;
-if ( num < 1 || num > 18)
+
+int Fnumber = Convert.ToInt32(Console.ReadLine());
+int FirstFactorial= 0;
+for (int z = 1; z <= Fnumber; z++)
 {
+    FirstFactorial *= z;
 
-    for (int i= 1; i=num; i++){
-        FirstFacorial *= i;
-
-    }
 }
+Console.WriteLine("the Factorial is: " + FirstFactorial);
+
+
 
 //one decrement
-
-
 
 Console.WriteLine("9876654");
 string str = "9876654";
