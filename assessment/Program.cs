@@ -1,7 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-using System;
+﻿using System;
 
-Console.WriteLine("Hello, World!");
 
 //1 simple adding
 
@@ -46,6 +44,24 @@ for(int y=1; y <str.Length; y++)
     }
 }
 
+
+//evens
+string numsrt = "24618";
+string val="";
+foreach(int c in numsrt)
+{
+    if (c % 2 != 0)
+    {
+
+       val= "false";
+        break;
+    }
+    
+       
+}
+
+
+Console.WriteLine(" result"+val  );
 #region function
 
 //chech vowels
@@ -66,18 +82,18 @@ string letters(char check)
 
 
 //check evens
-Console.WriteLine("enter a number");
-int number2(int num)
-{
-    if (num % 2 == 0)
-    {
-        return num ;
-    }
-    else
-    {
-        return num ;
-    }
-}
+//Console.WriteLine("enter a number");
+//int number2(int num)
+//{
+//    if (num % 2 == 0)
+//    {
+  //      return num ;
+  //  }
+ //   else
+ //   {
+ //       return num ;
+ //   }
+//}
 #endregion
 
 #region call function
@@ -85,9 +101,9 @@ Console.WriteLine("enter a letter");
 char check = Convert.ToChar(Console.ReadLine());
 Console.WriteLine(letters(check));
 
-Console.WriteLine("enter number");
-int Count = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("the number is :   " + number2(Count));
+//Console.WriteLine("enter number");
+//int Count = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("the number is :   " + number2(Count));
 
 
 #endregion
