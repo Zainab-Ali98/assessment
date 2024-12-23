@@ -71,11 +71,11 @@ int number2(int num)
 {
     if (num % 2 == 0)
     {
-        return num * 2;
+        return num ;
     }
     else
     {
-        return num * num;
+        return num ;
     }
 }
 #endregion
